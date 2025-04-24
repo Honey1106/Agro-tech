@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Advisory System</title>
+    <link rel="stylesheet" href="crop-advise.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+          <div class="logo">🌿 Crop Cure</div>
+          <nav>
+            <a href="index.html">Home</a>
+            <a href="pest.html">Pest Library</a>
+            <a href="identify.html">Identify</a>
+            <a href="crop-advise.html">Crop Advisor</a>
+          </nav>
+          <div class="auth-buttons">
+            <button href="signup.html" class="signup"  >Sign Up</button>
+            <button class="login">Login</button>
+          </div>
+        </div>
+      </header>
+    
+    <div class="container">
+        <header>
+            <h1>Crop Advisory System</h1>
+            <p>Get personalized crop recommendations and planting schedules based on your location, soil conditions, and seasonal factors.</p>
+        </header>
+
+        <section class="input-fields">
+            <div class="location">
+                <label for="location">Your Location</label>
+                <input type="text" id="location" placeholder="City, State or ZIP Code">
+                <p class="note">We use your location to determine climate patterns and growing zones.</p>
+            </div>
+
+            <div class="season">
+                <label for="season">Planning Season</label>
+                <select id="season">
+                    <option value="" disabled selected>Select growing season</option>
+                    <option value="kharif">Kharif (Monsoon)</option>
+                    <option value="rabi">Rabi (Winter)</option>
+                    <option value="zaid">Zaid (Summer)</option>
+                    </select>
+            </div>
+
+            <div class="soil-type">
+                <label for="soil">Soil Type</label>
+                <select id="soil">
+                    <option value="" disabled selected>Select soil type</option>
+                    <option value="alluvial">Alluvial</option>
+                    <option value="black">Black</option>
+                    <option value="red">Red</option>
+                    <option value="laterite">Laterite</option>
+                    <option value="sandy">Sandy</option>
+                    <option value="loamy">Loamy</option>
+                    </select>
+            </div>
+
+            <div class="water-availability">
+                <label for="water">Water Availability</label>
+                <select id="water">
+                    <option value="" disabled selected>Select water availability</option>
+                    <option value="high">High</option>
+                    <option value="medium">Medium</option>
+                    <option value="low">Low</option>
+                    </select>
+            </div>
+
+            <div class="soil-ph">
+                <label for="ph">Soil pH Level (If known)</label>
+                <div class="ph-slider-container">
+                    <input type="range" id="ph" min="3.5" max="9.0" step="0.1" value="6.5">
+                    <span id="ph-value">pH 6.5</span>
+                </div>
+                <div class="ph-labels">
+                    <span>Acidic (3.5)</span>
+                    <span>Neutral (7.0)</span>
+                    <span>Alkaline (9.0)</span>
+                </div>
+            </div>
+        </section>
+
+        <button class="recommendation-button" id="getRecommendations">Get Crop Recommendations</button>
+    </div>
+    <section class="smart-farming-tips">
+        <h2>Smart Farming Tips</h2>
+        <div class="tips-container">
+            <div class="tip-card">
+                <div class="icon">&#128103;</div>
+                <h3>Companion Planting</h3>
+                <p>Plant compatible crops together to improve growth, deter pests, and enhance flavors. For example, plant basil near tomatoes.</p>
+            </div>
+            <div class="tip-card">
+                <div class="icon">&#127798;</div>
+                <h3>Crop Rotation</h3>
+                <p>Avoid planting crops from the same family in the same location for consecutive seasons to prevent soil depletion and pest buildup.</p>
+            </div>
+            <div class="tip-card">
+                <div class="icon">&#128166;</div>
+                <h3>Water Management</h3>
+                <p>Water deeply and less frequently to encourage deep root growth. Morning watering reduces evaporation and fungal disease risk.</p>
+            </div>
+            <div class="tip-card">
+                <div class="icon">&#9998;</div>
+                <h3>Soil Health</h3>
+                <p>Regularly add organic matter like compost to improve soil structure, fertility, and water retention capabilities.</p>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-section about">
+            <h3><i class="leaf-icon">🍃</i> Crop Cure</h3>
+            <p>Your digital companion for smart and sustainable farming. Identify pests, get treatment recommendations, and optimize your crop planning.</p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+         0     <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+      
+          <div class="footer-section links">
+            <h4><i class="cloud-icon">☁</i> Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="identify.html">Pest Identification</a></li>
+              <li><a href="pest.html">Pest Library</a></li>
+              <li><a href="crop-advise.html">Crop Advisory</a></li>
+              <li><a href="signup.html">Sign Up</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-section contact">
+            <h4><i class="envelope-icon">✉</i> Contact Us</h4>
+            <p>Have questions or suggestions? We'd love to hear from you!</p>
+            <form>
+              <input type="email" placeholder="Your Email" required>
+              <textarea placeholder="Your Message" required></textarea>
+              <button type="submit">Send Message</button>
+            </form>
+          </div>
+        </div>
+        <div class="footer-bottom">
+        </div>
+      </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

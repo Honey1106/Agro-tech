@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pest & Disease Library</title>
+    <link rel="stylesheet" href="pest.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+          <div class="logo">🌿 Crop Cure</div>
+          <nav>
+            <a href="index.html">Home</a>
+            <a href="pest.html">Pest Library</a>
+            <a href="identify.html">Identify</a>
+            <a href="crop-advise.html">Crop Advisor</a>
+          </nav>
+          <div class="auth-buttons">
+            <button href="signup.html" class="signup">Sign Up</button>
+            <button class="login">Login</button>
+          </div>
+        </div>
+      </header>
+    <section class="pest-disease-library">
+        <h2>Pest & Disease Library</h2>
+        <p class="description">Explore our comprehensive database of common agricultural pests and diseases. Learn how to identify, prevent, and treat these threats to protect your crops.</p>
+
+        <div class="search-bar">
+            <input type="text" placeholder="Search for pests or diseases by name...">
+            <span class="search-icon">&#128269;</span>
+        </div>
+
+        <ul class="category-filters">
+            <li class="active" data-category="all">All</li>
+            <li data-category="insects">Insects</li>
+            <li data-category="fungal-diseases">Fungal Diseases</li>
+            <li data-category="nematodes">Nematodes</li>
+            <li data-category="bacterial-diseases">Bacterial Diseases</li>
+            <li data-category="viruses">Viruses</li>
+        </ul>
+
+        <div class="results-container">
+            </div>
+    </section>
+    <div class="card-container">
+        <div class="pest-disease-card">
+            <div class="image-placeholder">Aphids</div>
+            <div class="card-content">
+                <div class="title-tag">
+                    <h3>Aphids</h3>
+                    <span class="tag insect">Insect</span>
+                </div>
+                <p class="scientific-name">Aphidoidea</p>
+                <p class="description">Small sap-sucking insects that can cause significant damage to plants by stunting growth...</p>
+                <div class="affected-crops">
+                    <span class="crop">Vegetables</span>
+                    <span class="crop">Fruits</span>
+                    <button class="more-crops">+1 more</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="pest-disease-card">
+            <div class="image-placeholder">Powdery Mildew</div>
+            <div class="card-content">
+                <div class="title-tag">
+                    <h3>Powdery Mildew</h3>
+                    <span class="tag fungus">Fungus</span>
+                </div>
+                <p class="scientific-name">Erysiphales</p>
+                <p class="description">A fungal disease that affects a wide range of plants, appearing as a white or gray powdery...</p>
+                <div class="affected-crops">
+                    <span class="crop">Cucurbits</span>
+                    <span class="crop">Cereals</span>
+                    <button class="more-crops">+2 more</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="pest-disease-card">
+            <div class="image-placeholder">Tomato Hornworm</div>
+            <div class="card-content">
+                <div class="title-tag">
+                    <h3>Tomato Hornworm</h3>
+                    <span class="tag insect">Insect</span>
+                </div>
+                <p class="scientific-name">Manduca quinquemaculata</p>
+                <p class="description">Large green caterpillars that can defoliate tomato plants and damage fruit in a short period of time.</p>
+                <div class="affected-crops">
+                    <span class="crop">Tomatoes</span>
+                    <span class="crop">Peppers</span>
+                    <button class="more-crops">+2 more</button>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pest & Disease Cards</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card-container">
+        <div class="pest-disease-card">
+            <div class="image-placeholder">Late Blight</div>
+            <div class="card-content">
+                <div class="title-tag">
+                    <h3>Late Blight</h3>
+                    <span class="tag fungus">Fungus</span>
+                </div>
+                <p class="scientific-name">Phytophthora infestans</p>
+                <p class="description">A devastating disease that caused the Irish Potato Famine, affecting potatoes and tomatoes with...</p>
+                <div class="affected-crops">
+                    <span class="crop">Potatoes</span>
+                    <span class="crop">Tomatoes</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="pest-disease-card">
+            <div class="image-placeholder">Japanese Beetle</div>
+            <div class="card-content">
+                <div class="title-tag">
+                    <h3>Japanese Beetle</h3>
+                    <span class="tag insect">Insect</span>
+                </div>
+                <p class="scientific-name">Popillia japonica</p>
+                <p class="description">Invasive beetles that skeletonize leaves by feeding on tissue between veins and damage...</p>
+                <div class="affected-crops">
+                    <span class="crop">Roses</span>
+                    <span class="crop">Grapes</span>
+                    <button class="more-crops">+3 more</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="pest-disease-card">
+            <div class="image-placeholder">Root-knot Nematode</div>
+            <div class="card-content">
+                <div class="title-tag">
+                    <h3>Root-knot Nematode</h3>
+                    <span class="tag nematode">Nematode</span>
+                </div>
+                <p class="scientific-name">Meloidogyne spp.</p>
+                <p class="description">Microscopic soil-dwelling worms that infect plant roots, causing swellings (galls) and reducing...</p>
+                <div class="affected-crops">
+                    <span class="crop">Vegetables</span>
+                    <span class="crop">Fruits</span>
+                    <button class="more-crops">+1 more</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-section about">
+            <h3><i class="leaf-icon">🍃</i> Crop Cure</h3>
+            <p>Your digital companion for smart and sustainable farming. Identify pests, get treatment recommendations, and optimize your crop planning.</p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+         0     <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+      
+          <div class="footer-section links">
+            <h4><i class="cloud-icon">☁</i> Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="identify.html">Pest Identification</a></li>
+              <li><a href="pest.html">Pest Library</a></li>
+              <li><a href="crop-advise.html">Crop Advisory</a></li>
+              <li><a href="signup.html">Sign Up</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-section contact">
+            <h4><i class="envelope-icon">✉</i> Contact Us</h4>
+            <p>Have questions or suggestions? We'd love to hear from you!</p>
+            <form>
+              <input type="email" placeholder="Your Email" required>
+              <textarea placeholder="Your Message" required></textarea>
+              <button type="submit">Send Message</button>
+            </form>
+          </div>
+        </div>
+        <div class="footer-bottom">
+        </div>
+      </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
